@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:js": "browserify -t babelify src/main.js > public/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
