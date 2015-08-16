@@ -7,5 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "arda": "^0.13.2",
+    "babelify": "^6.1.3",
+    "browserify": "^11.0.1",
+    "react": "^0.13.3"
+  }
 }
