@@ -1,9 +1,16 @@
-var Sub = require('./sub.js');
-Sub(); // => hello! browser.
+global.React = require('react');
 
-var _ = require('lodash');
-var a = _.map([1,2,3,4], (val) => {
-  return val * 2
+var Main = React.createClass({
+  render: () => {
+    return (
+      <div>
+        main component
+      </div>
+    )
+  }
 });
 
-console.log(a);
+React.render(
+  <Main />, document.getElementById('app')
+);
+
