@@ -1,6 +1,9 @@
 global.React = require('react');
+var Arda = require('arda');
 
 var Main = React.createClass({
+  mixins: [Arda.mixin],
+
   render: () => {
     return (
       <div>
@@ -10,7 +13,15 @@ var Main = React.createClass({
   }
 });
 
-React.render(
-  <Main />, document.getElementById('app')
+class MainContext extends Arda.Context {
+  get component() {
+    return Main;
+  }
+}
+
+var Router = new Arda.Router(
+  Arda.DefaultLayout,
+  document.getElementById('app')
 );
 
+Router.pushContext(MainContext, {});
