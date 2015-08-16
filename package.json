@@ -15,5 +15,9 @@
     "browserify": "^11.0.1",
     "lodash": "^3.10.1",
     "react": "^0.13.3"
+  },
+  "dependencies": {
+    "arda": "^0.13.2",
+    "react": "^0.13.3"
   }
 }
